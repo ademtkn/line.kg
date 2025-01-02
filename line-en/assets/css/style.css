@@ -1,4 +1,4 @@
-/* Common CSS */
+/* Common CSS */ 
 :root {
   --primary-color: #7AE36A;
   --secondary-color: #F6DC66;
@@ -253,7 +253,7 @@
 }
 @media (min-width: 1200px) and (max-width: 1450px) {
   .hero-sel .hero-image_one {
-    left: -20%;
+    left: -10%;
   }
 }
 .hero-sel .hero-image_one img {
@@ -263,16 +263,16 @@
   position: absolute;
   top: -15%;
   left: -15%;
-  width: 500px;
-  height: 650px;
+  width: 475px;
+  height: 620px;
   border: 1px solid #F6DC66;
   border-radius: 250px;
   z-index: -1;
 }
 .hero-sel .hero-image_two {
   position: absolute;
-  top: 30%;
-  right: 70px;
+  top: 33%;
+  right: -5px;
   z-index: 1;
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -295,16 +295,16 @@
 }
 .hero-sel .hero-image_two span.circle {
   position: absolute;
-  top: -27%;
-  right: -100px;
-  width: 500px;
-  height: 650px;
-  border: 1px solid #F6DC66;
+  top: -15%;
+  right: -20px;
+  width: 475px;
+  height: 620px;
+  border: 2px solid #F6DC66;
   border-radius: 250px;
   z-index: -1;
 }
 .hero-sel .hero-content {
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .hero-sel .hero-content {
