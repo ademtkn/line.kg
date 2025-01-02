@@ -1,0 +1,161 @@
+$flaticon_linekg-font: "flaticon_linekg";
+
+@font-face {
+    font-family: $flaticon_linekg-font;
+    src: url("./flaticon_linekg.woff2?e733ad267a112d39091b35f8624f1c67") format("woff2"),
+url("./flaticon_linekg.woff?e733ad267a112d39091b35f8624f1c67") format("woff"),
+url("./flaticon_linekg.eot?e733ad267a112d39091b35f8624f1c67#iefix") format("embedded-opentype"),
+url("./flaticon_linekg.ttf?e733ad267a112d39091b35f8624f1c67") format("truetype"),
+url("./flaticon_linekg.svg?e733ad267a112d39091b35f8624f1c67#flaticon_linekg") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_linekg !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon_linekg-map: (
+    "collaboration": "\f101",
+    "iteration": "\f102",
+    "business-trip": "\f103",
+    "product-development": "\f104",
+    "quote": "\f105",
+    "professional-development": "\f106",
+    "stopwatch": "\f107",
+    "quotation-mark": "\f108",
+    "risk": "\f109",
+    "flexible": "\f10a",
+    "cross-platform": "\f10b",
+    "encrypted": "\f10c",
+    "teacher": "\f10d",
+    "webinar": "\f10e",
+    "access-control": "\f10f",
+    "cooperation": "\f110",
+    "curve": "\f111",
+    "megaphone": "\f112",
+    "healthcare": "\f113",
+    "computer-science": "\f114",
+    "world-wide-web": "\f115",
+    "live-music": "\f116",
+    "positive-review": "\f117",
+    "goal": "\f118",
+    "target": "\f119",
+    "marketing": "\f11a",
+    "product": "\f11b",
+    "brainstorming": "\f11c",
+    "planning": "\f11d",
+    "award-symbol": "\f11e",
+    "compliance": "\f11f",
+    "route": "\f120",
+    "mailbox": "\f121",
+    "telephone": "\f122",
+);
+
+.flaticon-collaboration:before {
+    content: map-get($flaticon_linekg-map, "collaboration");
+}
+.flaticon-iteration:before {
+    content: map-get($flaticon_linekg-map, "iteration");
+}
+.flaticon-business-trip:before {
+    content: map-get($flaticon_linekg-map, "business-trip");
+}
+.flaticon-product-development:before {
+    content: map-get($flaticon_linekg-map, "product-development");
+}
+.flaticon-quote:before {
+    content: map-get($flaticon_linekg-map, "quote");
+}
+.flaticon-professional-development:before {
+    content: map-get($flaticon_linekg-map, "professional-development");
+}
+.flaticon-stopwatch:before {
+    content: map-get($flaticon_linekg-map, "stopwatch");
+}
+.flaticon-quotation-mark:before {
+    content: map-get($flaticon_linekg-map, "quotation-mark");
+}
+.flaticon-risk:before {
+    content: map-get($flaticon_linekg-map, "risk");
+}
+.flaticon-flexible:before {
+    content: map-get($flaticon_linekg-map, "flexible");
+}
+.flaticon-cross-platform:before {
+    content: map-get($flaticon_linekg-map, "cross-platform");
+}
+.flaticon-encrypted:before {
+    content: map-get($flaticon_linekg-map, "encrypted");
+}
+.flaticon-teacher:before {
+    content: map-get($flaticon_linekg-map, "teacher");
+}
+.flaticon-webinar:before {
+    content: map-get($flaticon_linekg-map, "webinar");
+}
+.flaticon-access-control:before {
+    content: map-get($flaticon_linekg-map, "access-control");
+}
+.flaticon-cooperation:before {
+    content: map-get($flaticon_linekg-map, "cooperation");
+}
+.flaticon-curve:before {
+    content: map-get($flaticon_linekg-map, "curve");
+}
+.flaticon-megaphone:before {
+    content: map-get($flaticon_linekg-map, "megaphone");
+}
+.flaticon-healthcare:before {
+    content: map-get($flaticon_linekg-map, "healthcare");
+}
+.flaticon-computer-science:before {
+    content: map-get($flaticon_linekg-map, "computer-science");
+}
+.flaticon-world-wide-web:before {
+    content: map-get($flaticon_linekg-map, "world-wide-web");
+}
+.flaticon-live-music:before {
+    content: map-get($flaticon_linekg-map, "live-music");
+}
+.flaticon-positive-review:before {
+    content: map-get($flaticon_linekg-map, "positive-review");
+}
+.flaticon-goal:before {
+    content: map-get($flaticon_linekg-map, "goal");
+}
+.flaticon-target:before {
+    content: map-get($flaticon_linekg-map, "target");
+}
+.flaticon-marketing:before {
+    content: map-get($flaticon_linekg-map, "marketing");
+}
+.flaticon-product:before {
+    content: map-get($flaticon_linekg-map, "product");
+}
+.flaticon-brainstorming:before {
+    content: map-get($flaticon_linekg-map, "brainstorming");
+}
+.flaticon-planning:before {
+    content: map-get($flaticon_linekg-map, "planning");
+}
+.flaticon-award-symbol:before {
+    content: map-get($flaticon_linekg-map, "award-symbol");
+}
+.flaticon-compliance:before {
+    content: map-get($flaticon_linekg-map, "compliance");
+}
+.flaticon-route:before {
+    content: map-get($flaticon_linekg-map, "route");
+}
+.flaticon-mailbox:before {
+    content: map-get($flaticon_linekg-map, "mailbox");
+}
+.flaticon-telephone:before {
+    content: map-get($flaticon_linekg-map, "telephone");
+}

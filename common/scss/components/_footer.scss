@@ -1,0 +1,141 @@
+/*---- 
+
+====================
+02. Components CSS
+    # Footer CSS
+====================
+
+----*/ 
+
+@use "./../abstract";
+
+.footer-widget{
+    & .footer-content{
+        & h4.widget-title{
+            margin-bottom: 12px;
+            font-weight: 600;
+            font-size: 20px;
+        }
+        & .social-link{
+            & li{
+                display: inline-block;
+                &:not(:last-child){
+                    margin-right: 5px;
+                }
+            }
+            & a{
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                border: 1px solid rgba(16, 16, 16, 0.10);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $heading-color;
+                &:hover{
+                    background-color: $primary-color;
+                }
+            }
+        }
+        & ul{
+            & li{
+                &:not(:last-child){
+                    margin-bottom: 12px;
+                }
+            }
+        }
+    }
+}
+.footer-about-widget{
+    & .footer-content{
+        & .footer-logo{
+            margin-bottom:25px;
+        }
+        & p{
+            margin-bottom: 25px;
+        }
+    }
+}
+.footer-newsletter-widget{
+    & .footer-content{
+        & p{
+            margin-bottom: 25px;
+        }
+        & .form-group{
+            position: relative;
+            max-width: 410px;
+            & label{
+                position: absolute;
+                top: 13px;
+                left: 20px;
+            }
+            & .form_control{
+                width: 100%;
+                padding: 16px 140px 16px 40px;
+                line-height: 20px;
+                border-radius: 10px;
+                border: 1.2px solid rgba(16, 16, 16, 0.10);
+                font-size: 14px;
+                @include respond(phone){
+                    padding: 16px 40px 16px 40px;
+                }
+            }
+            & .theme-btn{
+                position: absolute;
+                top: 7px;
+                right: 7px;
+                &.style-one{
+                    padding: 13px 22px;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                @include respond (xm){
+                    position: relative;
+                    left: 0;
+                    margin-top: 10px;
+                }
+                @include respond (tablet){
+                    position: relative;
+                    left: 0;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+.footer-copyright{
+   border-top: 1px solid $border-color;
+   padding: 30px 0;
+    & .copyright-text{
+        @include respond(phone){
+            text-align: center;
+        }
+        & p{
+            & span{
+                color: $primary-color;
+            }
+        }
+    }
+    & .copyright-nav{
+        float: right;
+        @include respond(phone){
+            float: none;
+            text-align: center;
+        }
+        & ul{
+            & li{
+                display: inline-block;
+                &:not(:last-child){
+                    margin-right: 25px;
+                }
+                & a{
+                    &:hover{
+                        color: $primary-color;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
