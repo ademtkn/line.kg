@@ -1,3 +1,59 @@
+/* Language CSS */ 
+.menu-item a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.flag-icon {
+  font-size: 24px;
+  display: inline-block;
+  color: transparent; /* Bayrak rengini görünmez yapar */
+}
+
+.flag-icon::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 20px;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+/* Amerikan Bayrağı */
+.flag-icon.usa::before {
+  background-image: url('https://flagcdn.com/w320/us.png');
+}
+
+
+/* Kırgızistan Bayrağı */
+.flag-icon.kyrgyzstan::before {
+  background-image: url('https://flagcdn.com/w320/kg.png');
+}
+
+
+/* Hover efekt */
+.hover-text {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu-item a:hover .hover-text {
+  opacity: 1;
+}
+
+
 /* Common CSS */ 
 :root {
   --primary-color: #7AE36A;
