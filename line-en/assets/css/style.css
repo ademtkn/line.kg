@@ -1991,6 +1991,9 @@
 }
 .team-details-page .team-details-wrapper .team-item .member-image img {
   border-radius: 7px;
+  width: 175px; /* Genişlik */
+  height: 200px; /* Yükseklik */
+  object-fit: cover; /* Resmin düzgün kırpılması için */
 }
 .team-details-page .team-details-wrapper .item h5.title {
   margin-bottom: 15px;
