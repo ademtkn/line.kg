@@ -2094,6 +2094,14 @@
 .team-details-page .team-details-wrapper .member-info-content {
   padding-left: 100px;
 }
+
+.title .country {
+  font-size: 14px;
+  color: #777;
+  margin-left: 5px; /* İsim ile ülke arasındaki boşluk */
+  font-style: italic;
+}
+
 @media (min-width: 1200px) and (max-width: 1450px) {
   .team-details-page .team-details-wrapper .member-info-content {
     padding-left: 40px;
