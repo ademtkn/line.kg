@@ -1,3 +1,59 @@
+/* Language CSS */ 
+.menu-item a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.flag-icon {
+  font-size: 24px;
+  display: inline-block;
+  color: transparent; /* Bayrak rengini görünmez yapar */
+}
+
+.flag-icon::before {
+  content: '';
+  display: inline-block;
+  width: 32px;
+  height: 20px;
+  background-size: cover;
+  border-radius: 4px;
+}
+
+/* Amerikan Bayrağı */
+.flag-icon.usa::before {
+  background-image: url('https://flagcdn.com/w320/us.png');
+}
+
+
+/* Kırgızistan Bayrağı */
+.flag-icon.kyrgyzstan::before {
+  background-image: url('https://flagcdn.com/w320/kg.png');
+}
+
+
+/* Hover efekt */
+.hover-text {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu-item a:hover .hover-text {
+  opacity: 1;
+}
+
+
 /* Common CSS */ 
 :root {
   --primary-color: #7AE36A;
@@ -1991,6 +2047,9 @@
 }
 .team-details-page .team-details-wrapper .team-item .member-image img {
   border-radius: 7px;
+  width: 175px; /* Genişlik */
+  height: 200px; /* Yükseklik */
+  object-fit: cover; /* Resmin düzgün kırpılması için */
 }
 .team-details-page .team-details-wrapper .item h5.title {
   margin-bottom: 15px;
@@ -2035,6 +2094,14 @@
 .team-details-page .team-details-wrapper .member-info-content {
   padding-left: 100px;
 }
+
+.title .country {
+  font-size: 14px;
+  color: #777;
+  margin-left: 5px; /* İsim ile ülke arasındaki boşluk */
+  font-style: italic;
+}
+
 @media (min-width: 1200px) and (max-width: 1450px) {
   .team-details-page .team-details-wrapper .member-info-content {
     padding-left: 40px;
