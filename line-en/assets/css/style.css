@@ -743,6 +743,13 @@
   color: var(--white-color);
 }
 
+.title .starname {
+  font-size: 14px;
+  color: #fc0303;
+  margin-left: 5px; 
+  font-style: italic;
+}
+
 .testimonial-sel {
   position: relative;
   background-color: #00486E;
