@@ -1,4 +1,11 @@
 /* Language CSS */ 
+.menu-item {
+  display: flex;
+  justify-content: flex-end; /* Sağ tarafa hizala */
+  flex-direction: row-reverse; /* Sola doğru sıralama */
+  gap: 10px; /* Bayraklar arası boşluk */
+}
+
 .menu-item a {
   position: relative;
   display: inline-block;
