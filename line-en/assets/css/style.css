@@ -3083,3 +3083,30 @@
 .business-footer .footer-copyright {
   border-top-color: rgba(255, 255, 255, 0.1);
 }
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  z-index: 9999;
+  background-color: #25D366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  background-color: #128C7E;
+  transform: scale(1.1);
+}
+
+.whatsapp-icon a {
+  color: white;
+  font-size: 36px;
+  text-decoration: none;
+}
