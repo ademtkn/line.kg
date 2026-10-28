@@ -2011,7 +2011,9 @@ label {
   background-color: var(--white-color);
   max-width: 520px;
 }
-.linekg-iconic-box.style-seven .content h4.title {
+.linekg-iconic-box.style-seven .content :is(h4, h3).title {
+  font-size: 22px;
+  line-height: 34px;
   margin-bottom: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2021,20 +2023,20 @@ label {
           align-items: center;
 }
 @media screen and (max-width: 991px) {
-  .linekg-iconic-box.style-seven .content h4.title {
+  .linekg-iconic-box.style-seven .content :is(h4, h3).title {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
     font-size: 18px;
   }
 }
-.linekg-iconic-box.style-seven .content h4.title i {
+.linekg-iconic-box.style-seven .content :is(h4, h3).title :is(i, .ui-icon) {
   margin-right: 20px;
   color: #042A1B;
   margin-top: 5px;
 }
 @media screen and (max-width: 991px) {
-  .linekg-iconic-box.style-seven .content h4.title i {
+  .linekg-iconic-box.style-seven .content :is(h4, h3).title :is(i, .ui-icon) {
     margin-top: 8px;
   }
 }
@@ -2255,7 +2257,9 @@ label {
   font-size: 65px;
   color: var(--heading-color);
 }
-.linekg-card-item.style-four .content h4.title {
+.linekg-card-item.style-four .content :is(h4, h2).title {
+  font-size: 22px;
+  line-height: 34px;
   margin-bottom: 15px;
 }
 .linekg-card-item.style-four .content p {
@@ -2280,7 +2284,7 @@ label {
 .linekg-course-item.style-one .course-info-wrap .course-info {
   padding: 0 20px 20px;
 }
-.linekg-course-item.style-one .course-info-wrap .course-info h4.title {
+.linekg-course-item.style-one .course-info-wrap .course-info :is(h4, h3).title {
   font-size: 18px;
   line-height: 30px;
   letter-spacing: -0.36px;
@@ -2325,7 +2329,7 @@ label {
 .linekg-course-item.style-one .course-info-wrap .course-stats span:not(:last-child) {
   margin-right: 25px;
 }
-.linekg-course-item.style-one .course-info-wrap .course-stats span i {
+.linekg-course-item.style-one .course-info-wrap .course-stats span :is(i, .ui-icon) {
   margin-right: 5px;
 }
 
@@ -3276,8 +3280,8 @@ label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  content: "\f067";
-  font-family: "Font Awesome 5 Pro";
+  content: "+";
+  font-family: var(--body-font);
   font-weight: 400;
   margin-left: auto;
   width: 40px;
@@ -3290,7 +3294,7 @@ label {
 }
 .accordion-item .accordion-header .accordion-title[aria-expanded=true]:after {
   border-color: #26272B;
-  content: "\f068";
+  content: "−";
 }
 .accordion-item .accordion-content p {
   padding-top: 10px;
@@ -3627,7 +3631,9 @@ label {
   -webkit-transition: all 0.35s ease-out 0s;
   transition: all 0.35s ease-out 0s;
 }
-.linekg-category-item.style-one .content h6.title {
+.linekg-category-item.style-one .content :is(h6, h3).title {
+  font-size: 18px;
+  line-height: 1;
   margin-bottom: 5px;
   letter-spacing: -0.36px;
 }
@@ -3791,7 +3797,7 @@ label {
 ====================
 
 ----*/
-.footer-widget .footer-content h4.widget-title {
+.footer-widget .footer-content :is(h4, h2).widget-title {
   margin-bottom: 12px;
   font-weight: 600;
   font-size: 20px;

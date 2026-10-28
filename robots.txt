@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /_localized/
+Disallow: /tools/
+Disallow: /tests/
+Disallow: /deployment/
+Disallow: /.git/
+
+Sitemap: https://line.kg/sitemap.xml
