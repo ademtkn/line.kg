@@ -1,8 +1,9 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [main]
+  # Production uses the built-in Pages build from gh-pages. Custom Actions jobs
+  # are currently blocked by the account's billing lock. Publish with
+  # python3 tools/publish-pages.py until the lock has been resolved.
   workflow_dispatch:
 
 permissions:
@@ -23,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Build dist/
-        run: python3 tools/build.py
+        run: python3 tools/pages.py
       - name: Keep custom domain
         run: echo "line.kg" > dist/CNAME
       - uses: actions/configure-pages@v5
