@@ -36,6 +36,10 @@ def main():
                     node.attrs['data-static-pages'] = 'true'
                 if node.tag == 'head':
                     node.children.insert(0, build.Node('script', {'src': '/assets/js/pages-language.js?v=20261028'}))
+                if node.tag == 'script' and node.attrs.get('src', '').split('?')[0] == '/assets/js/language.js':
+                    # The Pages adapter changes this script. Refresh its URL so
+                    # browsers cannot reuse the former Nginx deployment's copy.
+                    node.attrs['src'] = '/assets/js/language.js?v=20261028-pages-1'
                 if node.tag == 'a' and 'href' in node.attrs:
                     node.attrs['href'] = page_url(node.attrs['href'])
                 if node.tag == 'link' and node.attrs.get('rel') == 'canonical':

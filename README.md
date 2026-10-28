@@ -3,6 +3,12 @@
 Line Education is the informational website of **"Line" LLC / ОсОО «Лайн»**.
 Contact: **linekginfo@gmail.com** and **+996 502 001 903**.
 
+Production hosting is **GitHub Pages**, built from the `gh-pages` branch.
+See [GITHUB-PAGES.md](GITHUB-PAGES.md) for the publishing command and static
+language routes. The query-aware server behavior described below belongs to the
+local preview and former Nginx hosting; Pages uses `/ky/` routes and redirects
+legacy query-language links in the browser.
+
 The project has four editable HTML sources: `index.html`, `contact.html`,
 `privacy.html` and `404.html`. English and Kyrgyz copy is shared through
 `assets/i18n/en.json` and `assets/i18n/ky.json`; there are no separately maintained
