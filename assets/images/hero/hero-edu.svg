@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 650" width="500" height="650" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#00B5FC"/>
+      <stop offset=".55" stop-color="#0A86C0"/>
+      <stop offset="1" stop-color="#00486E"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#F6DC66" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#F6DC66" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="page" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#D8F1FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="650" fill="url(#sky)"/>
+  <!-- soft grid of dots -->
+  <g fill="#fff" fill-opacity=".14">
+    <circle cx="40" cy="60" r="2.5"/><circle cx="80" cy="60" r="2.5"/><circle cx="120" cy="60" r="2.5"/><circle cx="160" cy="60" r="2.5"/>
+    <circle cx="40" cy="100" r="2.5"/><circle cx="80" cy="100" r="2.5"/><circle cx="120" cy="100" r="2.5"/><circle cx="160" cy="100" r="2.5"/>
+    <circle cx="340" cy="520" r="2.5"/><circle cx="380" cy="520" r="2.5"/><circle cx="420" cy="520" r="2.5"/><circle cx="460" cy="520" r="2.5"/>
+    <circle cx="340" cy="560" r="2.5"/><circle cx="380" cy="560" r="2.5"/><circle cx="420" cy="560" r="2.5"/><circle cx="460" cy="560" r="2.5"/>
+  </g>
+  <!-- orbit rings and glow -->
+  <circle cx="250" cy="270" r="190" fill="url(#glow)"/>
+  <circle cx="250" cy="270" r="150" stroke="#fff" stroke-opacity=".28" stroke-width="2" stroke-dasharray="3 9" stroke-linecap="round"/>
+  <circle cx="250" cy="270" r="205" stroke="#fff" stroke-opacity=".16" stroke-width="2"/>
+  <!-- distant mountains (Ala-Too) -->
+  <path d="M0 470 L90 360 L150 420 L230 320 L320 430 L390 350 L500 465 V650 H0Z" fill="#00486E" fill-opacity=".55"/>
+  <path d="M230 320 L205 352 L222 345 L236 360 L250 340Z M90 360 L72 384 L88 378 L100 392 L110 374Z M390 350 L372 372 L388 366 L400 380 L410 364Z" fill="#fff" fill-opacity=".85"/>
+  <path d="M0 520 L70 450 L140 510 L215 440 L300 520 L380 455 L500 540 V650 H0Z" fill="#00365A"/>
+  <!-- the Line: a rising rounded stroke -->
+  <path d="M-10 610 C 120 590, 200 560, 250 500" stroke="#F6DC66" stroke-width="10" stroke-linecap="round" opacity=".95"/>
+  <!-- open book -->
+  <path d="M250 470 C 205 438 135 436 70 458 V572 C 135 552 205 556 250 588Z" fill="#00365A" transform="translate(0 8)"/>
+  <path d="M250 470 C 295 438 365 436 430 458 V572 C 365 552 295 556 250 588Z" fill="#00365A" transform="translate(0 8)"/>
+  <path d="M250 462 C 205 430 135 428 76 448 V556 C 135 538 205 542 250 574Z" fill="url(#page)"/>
+  <path d="M250 462 C 295 430 365 428 424 448 V556 C 365 538 295 542 250 574Z" fill="url(#page)"/>
+  <path d="M250 462 V574" stroke="#0A86C0" stroke-width="3"/>
+  <g stroke="#0A86C0" stroke-opacity=".45" stroke-width="4" stroke-linecap="round">
+    <path d="M104 470 C 150 458 200 462 232 482"/><path d="M104 494 C 150 482 200 486 232 506"/><path d="M104 518 C 150 506 200 510 232 530"/>
+    <path d="M396 470 C 350 458 300 462 268 482"/><path d="M396 494 C 350 482 300 486 268 506"/>
+  </g>
+  <path d="M396 518 C 350 506 300 510 268 530" stroke="#F6DC66" stroke-width="4" stroke-linecap="round"/>
+  <!-- sprout: knowledge growing into values -->
+  <path d="M250 462 C 250 400 240 350 250 300" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+  <path d="M248 410 C 210 408 184 386 180 352 C 214 352 240 372 248 410Z" fill="#fff"/>
+  <path d="M250 372 C 288 370 314 348 318 314 C 284 314 258 334 250 372Z" fill="#8FE3FF"/>
+  <path d="M249 336 C 222 334 204 318 200 294 C 224 294 242 308 249 336Z" fill="#fff" fill-opacity=".85"/>
+  <!-- star at the top -->
+  <path d="M250 214 L261 246 L295 247 L268 267 L278 300 L250 281 L222 300 L232 267 L205 247 L239 246Z" fill="#F6DC66"/>
+  <!-- graduation cap -->
+  <g transform="translate(370 150) rotate(-12)">
+    <path d="M0 -26 L58 -4 L0 18 L-58 -4Z" fill="#00365A"/>
+    <path d="M-34 8 V36 C -34 46 34 46 34 36 V8 L0 22Z" fill="#00486E"/>
+    <path d="M52 -2 V34" stroke="#F6DC66" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="52" cy="38" r="6" fill="#F6DC66"/>
+  </g>
+  <!-- sparkles -->
+  <g fill="#fff">
+    <path d="M110 190 L115 204 L129 209 L115 214 L110 228 L105 214 L91 209 L105 204Z"/>
+    <path d="M420 300 L424 311 L435 315 L424 319 L420 330 L416 319 L405 315 L416 311Z" fill-opacity=".8"/>
+    <path d="M64 330 L67 338 L75 341 L67 344 L64 352 L61 344 L53 341 L61 338Z" fill-opacity=".7"/>
+  </g>
+  <circle cx="160" cy="130" r="6" fill="#F6DC66"/>
+  <circle cx="440" cy="230" r="4" fill="#fff" fill-opacity=".7"/>
+</svg>
