@@ -32,8 +32,8 @@
         <link rel="stylesheet" href="/common/css/common_style.css">
         <link rel="stylesheet" href="/assets/css/fonts.css?v=dbd763deb1a0">
         
-        <link rel="stylesheet" href="/assets/css/style.css?v=be5dc463a301">
-        <meta name="linekg-i18n-version" content="47dd54b54ff2">
+        <link rel="stylesheet" href="/assets/css/style.css?v=6bf98cee0d87">
+        <meta name="linekg-i18n-version" content="0b12e715fecb">
         <script src="/assets/js/language-init.js?v=7a7ba06dbc1d"></script>
         <script src="/assets/js/language.js?v=20261028-pages-1" defer></script>
         <noscript>
@@ -93,14 +93,9 @@
                     
                     <section class="hero-sel">
                         <div class="pattern bg_cover" style="background-image: url(/assets/images/hero/dot_bg.png);"></div>
-                        
-                        <div class="hero-image_two">
-                            <img src="/assets/images/hero/hero-img2.jpg" alt="" width="500" height="650" decoding="async">
-                            <span class="circle"></span>
-                        </div>
                         <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-xl-8">
+                            <div class="row align-items-center hero-layout">
+                                <div class="col-lg-7">
                                     
                                     <div class="hero-content">
                                         <h1 data-aos="fade-up" data-aos-duration="1200" data-i18n="home.text_001">Guiding You to Knowledge and Values</h1>
@@ -122,6 +117,13 @@
                                             </div>
                                         </div>
                                         
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-5">
+                                    <div class="hero-visual" data-aos="fade-left" data-aos-duration="1200">
+                                        <img src="/assets/images/hero/hero-edu.svg" alt="" width="500" height="650" decoding="async">
+                                        <span class="circle" aria-hidden="true"></span>
                                     </div>
                                 </div>
                             </div>
@@ -291,7 +293,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row justify-content-center">
                                 
                                 <div class="col-xxl-3 col-xl-4 col-sm-6">
                                     <div class="linekg-course-item style-one mb-30" data-aos="fade-up" data-aos-duration="1200">
@@ -380,6 +382,49 @@
                                     </div>
                                 </div>
 
+                                
+                                <div class="col-xxl-3 col-xl-4 col-sm-6">
+                                    <div class="linekg-course-item style-one mb-30" data-aos="fade-up" data-aos-duration="1200">
+                                        <div class="course-thumbnail">
+                                            <a href="https://edumaps.kg/" target="_blank" rel="noopener noreferrer">
+                                                <img src="/assets/images/course/edumaps-card.jpg" srcset="/assets/images/course/edumaps-card@2x.jpg 2x" alt="EduMaps" width="290" height="220" loading="lazy" decoding="async"> </a>
+                                        </div>
+                                        <div class="course-info-wrap">
+                                            <div class="course-info">
+                                                <div class="post-categories">
+                                                    <a href="https://edumaps.kg/" target="_blank" rel="noopener noreferrer">EduMaps</a>
+
+                                                </div>
+                                                <h3 class="title" data-i18n="home.text_078">Every School in Kyrgyzstan on One Map!</h3>
+                                            </div>
+                                            <div class="course-stats">
+                                                <span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#star"></use></svg><span data-i18n="home.text_079">Coming soon</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                
+                                <div class="col-xxl-3 col-xl-4 col-sm-6">
+                                    <div class="linekg-course-item style-one mb-30" data-aos="fade-up" data-aos-duration="1200">
+                                        <div class="course-thumbnail">
+                                            <a href="https://lineclass.com.kg/" target="_blank" rel="noopener noreferrer">
+                                                <img src="/assets/images/course/lineclass-card.jpg" srcset="/assets/images/course/lineclass-card@2x.jpg 2x" alt="LineClass" width="290" height="220" loading="lazy" decoding="async"> </a>
+                                        </div>
+                                        <div class="course-info-wrap">
+                                            <div class="course-info">
+                                                <div class="post-categories">
+                                                    <a href="https://lineclass.com.kg/" target="_blank" rel="noopener noreferrer">LineClass</a>
+
+                                                </div>
+                                                <h3 class="title" data-i18n="home.text_080">Know Every Student, Class by Class!</h3>
+                                            </div>
+                                            <div class="course-stats">
+                                                <span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#star"></use></svg><span data-i18n="home.text_081">Student observation and notes system</span></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
@@ -534,58 +579,122 @@
                     
 
                     
-                    <section class="client-sel pb-130" data-aos="fade-up" data-aos-duration="1200">
+                    <section class="client-sel partners-sel pb-130" id="partners" data-aos="fade-up" data-aos-duration="1200">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12">
                                     
-                                    <div class="client-text text-center mb-50">
+                                    <div class="client-text text-center mb-20">
                                         <span data-i18n="home.text_075">Our partners</span>
                                     </div>
+                                    <p class="partners-intro text-center mb-50" data-i18n="home.text_082">Select a partner to learn more about them.</p>
                                 </div>
                             </div>
                             
-                            <div class="client-slider">
-                                
-                                <div class="client-item">
-                                    <div class="client-img">
-                                        <img src="/assets/images/client/asylkech.png" alt="Asylkech" width="200" height="193" loading="lazy" decoding="async">
-                                    </div>
-                                </div>
-                                
-                                <div class="client-item">
-                                    <div class="client-img">
-                                        <img src="/assets/images/client/indigokids.png" alt="Indigo Kids" width="200" height="193" loading="lazy" decoding="async">
-                                    </div>
-                                </div>
-                                
-                                <div class="client-item">
-                                    <div class="client-img">
-                                        <img src="/assets/images/client/englishforum.png" alt="English Forum" width="200" height="193" loading="lazy" decoding="async">
-                                    </div>
-                                </div>
-                                
-                                <div class="client-item">
-                                    <div class="client-img">
-                                        <img src="/assets/images/client/Heraedu.png" alt="Hera Education" width="200" height="193" loading="lazy" decoding="async">
-                                    </div>
-                                </div>
-                                
-                                <div class="client-item">
-                                    <div class="client-img">
-                                        <img src="/assets/images/client/indigosapat.png" alt="Indigo Sapat" width="240" height="231" loading="lazy" decoding="async">
-                                    </div>
-                                </div>
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                                
-                            </div>
+                            <ul class="partner-grid">
+                                <li class="partner-item" data-aos="fade-up" data-aos-duration="1200">
+                                    <button type="button" class="partner-card" data-partner-open="partner-englishforum" aria-haspopup="dialog" aria-label="English Online Forum">
+                                        <span class="partner-logo"><img src="/assets/images/client/englishforum.png" alt="" width="200" height="193" loading="lazy" decoding="async"></span>
+                                        <span class="partner-name">English Online Forum</span>
+                                        <span class="partner-more"><span data-i18n="home.text_083">Learn more</span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#arrow-right"></use></svg></span>
+                                    </button>
+                                </li>
+                                <li class="partner-item" data-aos="fade-up" data-aos-duration="1200">
+                                    <button type="button" class="partner-card" data-partner-open="partner-slot-1" aria-haspopup="dialog" aria-label="Partner 1">
+                                        <span class="partner-logo partner-logo-wordmark"><img src="/assets/images/client/../logo/logo-main.png" alt="" width="169" height="82" loading="lazy" decoding="async"></span>
+                                        <span class="partner-name">Partner 1</span>
+                                        <span class="partner-more"><span data-i18n="home.text_083">Learn more</span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#arrow-right"></use></svg></span>
+                                    </button>
+                                </li>
+                                <li class="partner-item" data-aos="fade-up" data-aos-duration="1200">
+                                    <button type="button" class="partner-card" data-partner-open="partner-slot-2" aria-haspopup="dialog" aria-label="Partner 2">
+                                        <span class="partner-logo partner-logo-wordmark"><img src="/assets/images/client/../logo/logo-main.png" alt="" width="169" height="82" loading="lazy" decoding="async"></span>
+                                        <span class="partner-name">Partner 2</span>
+                                        <span class="partner-more"><span data-i18n="home.text_083">Learn more</span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#arrow-right"></use></svg></span>
+                                    </button>
+                                </li>
+                                <li class="partner-item" data-aos="fade-up" data-aos-duration="1200">
+                                    <button type="button" class="partner-card" data-partner-open="partner-slot-3" aria-haspopup="dialog" aria-label="Partner 3">
+                                        <span class="partner-logo partner-logo-wordmark"><img src="/assets/images/client/../logo/logo-main.png" alt="" width="169" height="82" loading="lazy" decoding="async"></span>
+                                        <span class="partner-name">Partner 3</span>
+                                        <span class="partner-more"><span data-i18n="home.text_083">Learn more</span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#arrow-right"></use></svg></span>
+                                    </button>
+                                </li>
+                                <li class="partner-item" data-aos="fade-up" data-aos-duration="1200">
+                                    <button type="button" class="partner-card" data-partner-open="partner-slot-4" aria-haspopup="dialog" aria-label="Partner 4">
+                                        <span class="partner-logo partner-logo-wordmark"><img src="/assets/images/client/../logo/logo-main.png" alt="" width="169" height="82" loading="lazy" decoding="async"></span>
+                                        <span class="partner-name">Partner 4</span>
+                                        <span class="partner-more"><span data-i18n="home.text_083">Learn more</span><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#arrow-right"></use></svg></span>
+                                    </button>
+                                </li>
+                            </ul>
                         </div>
+                    <dialog class="partner-dialog" id="partner-englishforum" aria-labelledby="partner-englishforum-title">
+                        <div class="partner-dialog-panel">
+                            <button type="button" class="partner-dialog-close" data-partner-close aria-label="Close" data-i18n-attrs="{&quot;aria-label&quot;:&quot;home.text_085&quot;}"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#close"></use></svg></button>
+                            <div class="partner-dialog-logo"><img src="/assets/images/client/englishforum.png" alt="" width="200" height="193" loading="lazy" decoding="async"></div>
+                            <p class="partner-dialog-kicker" data-i18n="home.text_084">Line Education partner</p>
+                            <h3 class="partner-dialog-title" id="partner-englishforum-title">English Online Forum</h3>
+                            <p class="partner-dialog-text" data-i18n="home.text_088">A 100% online English school with certified tutors from around the world, offering General English, Business English, and IELTS/TOEFL preparation.</p>
+                            <ul class="partner-dialog-links">
+                                <li><a href="https://englishonlineforum.com/" target="_blank" rel="noopener noreferrer"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#globe"></use></svg><span data-i18n="home.text_091">Website</span></a></li>
+                                <li><a href="https://www.instagram.com/englishonlinee" target="_blank" rel="noopener noreferrer"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#instagram"></use></svg><span>Instagram</span></a></li>
+                                <li><a href="https://www.youtube.com/@EnglishOnlineForum" target="_blank" rel="noopener noreferrer"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#youtube"></use></svg><span>YouTube</span></a></li>
+                            </ul>
+                        </div>
+                    </dialog>
+                    <dialog class="partner-dialog" id="partner-slot-1" aria-labelledby="partner-slot-1-title">
+                        <div class="partner-dialog-panel">
+                            <button type="button" class="partner-dialog-close" data-partner-close aria-label="Close" data-i18n-attrs="{&quot;aria-label&quot;:&quot;home.text_085&quot;}"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#close"></use></svg></button>
+                            <div class="partner-dialog-logo partner-logo-wordmark"><img src="/assets/images/client/../logo/logo-main.png" alt="" width="169" height="82" loading="lazy" decoding="async"></div>
+                            <p class="partner-dialog-kicker" data-i18n="home.text_084">Line Education partner</p>
+                            <h3 class="partner-dialog-title" id="partner-slot-1-title">Partner 1</h3>
+                            <p class="partner-dialog-text" data-i18n="home.text_086">Line Education empowers individuals of all ages to grow personally and professionally through educational guidance, language and reading programs, parent seminars, and character education.</p>
+                            <ul class="partner-dialog-links">
+                                <li><a href="https://line.kg/index.html" target="_blank" rel="noopener noreferrer"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#globe"></use></svg><span data-i18n="home.text_091">Website</span></a></li>
+                                <li><a href="https://www.instagram.com/lineedu.kg/" target="_blank" rel="noopener noreferrer"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#instagram"></use></svg><span>Instagram</span></a></li>
+                            </ul>
+                        </div>
+                    </dialog>
+                    <dialog class="partner-dialog" id="partner-slot-2" aria-labelledby="partner-slot-2-title">
+                        <div class="partner-dialog-panel">
+                            <button type="button" class="partner-dialog-close" data-partner-close aria-label="Close" data-i18n-attrs="{&quot;aria-label&quot;:&quot;home.text_085&quot;}"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#close"></use></svg></button>
+                            <div class="partner-dialog-logo partner-logo-wordmark"><img src="/assets/images/client/../logo/logo-main.png" alt="" width="169" height="82" loading="lazy" decoding="async"></div>
+                            <p class="partner-dialog-kicker" data-i18n="home.text_084">Line Education partner</p>
+                            <h3 class="partner-dialog-title" id="partner-slot-2-title">Partner 2</h3>
+                            <p class="partner-dialog-text" data-i18n="home.text_086">Line Education empowers individuals of all ages to grow personally and professionally through educational guidance, language and reading programs, parent seminars, and character education.</p>
+                            <ul class="partner-dialog-links">
+                                <li><a href="https://line.kg/index.html" target="_blank" rel="noopener noreferrer"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#globe"></use></svg><span data-i18n="home.text_091">Website</span></a></li>
+                                <li><a href="https://www.instagram.com/lineedu.kg/" target="_blank" rel="noopener noreferrer"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#instagram"></use></svg><span>Instagram</span></a></li>
+                            </ul>
+                        </div>
+                    </dialog>
+                    <dialog class="partner-dialog" id="partner-slot-3" aria-labelledby="partner-slot-3-title">
+                        <div class="partner-dialog-panel">
+                            <button type="button" class="partner-dialog-close" data-partner-close aria-label="Close" data-i18n-attrs="{&quot;aria-label&quot;:&quot;home.text_085&quot;}"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#close"></use></svg></button>
+                            <div class="partner-dialog-logo partner-logo-wordmark"><img src="/assets/images/client/../logo/logo-main.png" alt="" width="169" height="82" loading="lazy" decoding="async"></div>
+                            <p class="partner-dialog-kicker" data-i18n="home.text_084">Line Education partner</p>
+                            <h3 class="partner-dialog-title" id="partner-slot-3-title">Partner 3</h3>
+                            <p class="partner-dialog-text" data-i18n="home.text_086">Line Education empowers individuals of all ages to grow personally and professionally through educational guidance, language and reading programs, parent seminars, and character education.</p>
+                            <ul class="partner-dialog-links">
+                                <li><a href="https://line.kg/index.html" target="_blank" rel="noopener noreferrer"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#globe"></use></svg><span data-i18n="home.text_091">Website</span></a></li>
+                                <li><a href="https://www.instagram.com/lineedu.kg/" target="_blank" rel="noopener noreferrer"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#instagram"></use></svg><span>Instagram</span></a></li>
+                            </ul>
+                        </div>
+                    </dialog>
+                    <dialog class="partner-dialog" id="partner-slot-4" aria-labelledby="partner-slot-4-title">
+                        <div class="partner-dialog-panel">
+                            <button type="button" class="partner-dialog-close" data-partner-close aria-label="Close" data-i18n-attrs="{&quot;aria-label&quot;:&quot;home.text_085&quot;}"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#close"></use></svg></button>
+                            <div class="partner-dialog-logo partner-logo-wordmark"><img src="/assets/images/client/../logo/logo-main.png" alt="" width="169" height="82" loading="lazy" decoding="async"></div>
+                            <p class="partner-dialog-kicker" data-i18n="home.text_084">Line Education partner</p>
+                            <h3 class="partner-dialog-title" id="partner-slot-4-title">Partner 4</h3>
+                            <p class="partner-dialog-text" data-i18n="home.text_086">Line Education empowers individuals of all ages to grow personally and professionally through educational guidance, language and reading programs, parent seminars, and character education.</p>
+                            <ul class="partner-dialog-links">
+                                <li><a href="https://line.kg/index.html" target="_blank" rel="noopener noreferrer"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#globe"></use></svg><span data-i18n="home.text_091">Website</span></a></li>
+                                <li><a href="https://www.instagram.com/lineedu.kg/" target="_blank" rel="noopener noreferrer"><svg class="ui-icon" aria-hidden="true" focusable="false"><use href="/assets/images/ui/icons.svg#instagram"></use></svg><span>Instagram</span></a></li>
+                            </ul>
+                        </div>
+                    </dialog>
                     </section>
                 </main>
                 
@@ -669,5 +778,6 @@
             </a>
         </div>
         <script src="/assets/js/site.js?v=6ae6ee599f4e" defer></script>
+        <script src="/assets/js/partners.js?v=989721730f8b" defer></script>
     </body>
 </html>
