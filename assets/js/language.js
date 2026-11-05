@@ -19,14 +19,14 @@
         document.querySelectorAll('[data-localized-link]').forEach(function (link) {
             var url = new URL(link.getAttribute('href'), window.location.href);
             if (url.origin === window.location.origin) {
-                url.searchParams.set('lang', language);
+                url.searchParams.delete('lang');
                 link.setAttribute('href', url.pathname + url.search + url.hash);
             }
         });
 
         document.querySelectorAll('[data-language]').forEach(function (link) {
             var languageUrl = new URL(window.location.href);
-            languageUrl.pathname = languageUrl.pathname.replace(/^\/ky\//, '/'); if (link.dataset.language === 'ky') { languageUrl.pathname = '/ky' + languageUrl.pathname; } languageUrl.searchParams.set('lang', link.dataset.language);
+            languageUrl.pathname = languageUrl.pathname.replace(/^\/ky(?=\/|$)/, '') || '/'; if (link.dataset.language === 'ky') { languageUrl.pathname = '/ky' + languageUrl.pathname; } languageUrl.searchParams.delete('lang');
             link.setAttribute('href', languageUrl.pathname + languageUrl.search + languageUrl.hash);
             if (link.dataset.language === language) {
                 link.setAttribute('aria-current', 'page');
@@ -38,7 +38,7 @@
 
     function updateMetadata(language) {
         if (document.body.dataset.page === 'notfound') { return; }
-        var page = { home: 'index.html', contact: 'contact.html', privacy: 'privacy.html' }[document.body.dataset.page] || 'index.html';
+        var page = { home: '', contact: 'contact', privacy: 'privacy' }[document.body.dataset.page] || '';
         var base = 'https://line.kg/' + page;
         var canonical = 'https://line.kg/' + (language === 'ky' ? 'ky/' : '') + page;
         var canonicalLink = document.querySelector('link[rel="canonical"]');
@@ -66,7 +66,7 @@
         localizeLinks(language);
         updateMetadata(language);
         var address = new URL(window.location.href);
-        address.searchParams.set('lang', language);
+        address.searchParams.delete('lang');
         try {
             window.history.replaceState(window.history.state, '', address.pathname + address.search + address.hash);
         } catch (error) { /* File previews can have restricted history. */ }

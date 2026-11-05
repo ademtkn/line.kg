@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://line.kg/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://line.kg/index.html" />
-    <xhtml:link rel="alternate" hreflang="ky" href="https://line.kg/ky/index.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://line.kg/index.html" />
+    <loc>https://line.kg/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://line.kg/" />
+    <xhtml:link rel="alternate" hreflang="ky" href="https://line.kg/ky/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://line.kg/" />
   </url>
   <url>
-    <loc>https://line.kg/ky/index.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://line.kg/index.html" />
-    <xhtml:link rel="alternate" hreflang="ky" href="https://line.kg/ky/index.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://line.kg/index.html" />
+    <loc>https://line.kg/ky/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://line.kg/" />
+    <xhtml:link rel="alternate" hreflang="ky" href="https://line.kg/ky/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://line.kg/" />
   </url>
   <url>
-    <loc>https://line.kg/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://line.kg/contact.html" />
-    <xhtml:link rel="alternate" hreflang="ky" href="https://line.kg/ky/contact.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://line.kg/contact.html" />
+    <loc>https://line.kg/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://line.kg/contact" />
+    <xhtml:link rel="alternate" hreflang="ky" href="https://line.kg/ky/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://line.kg/contact" />
   </url>
   <url>
-    <loc>https://line.kg/ky/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://line.kg/contact.html" />
-    <xhtml:link rel="alternate" hreflang="ky" href="https://line.kg/ky/contact.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://line.kg/contact.html" />
+    <loc>https://line.kg/ky/contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://line.kg/contact" />
+    <xhtml:link rel="alternate" hreflang="ky" href="https://line.kg/ky/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://line.kg/contact" />
   </url>
   <url>
-    <loc>https://line.kg/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://line.kg/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="ky" href="https://line.kg/ky/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://line.kg/privacy.html" />
+    <loc>https://line.kg/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://line.kg/privacy" />
+    <xhtml:link rel="alternate" hreflang="ky" href="https://line.kg/ky/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://line.kg/privacy" />
   </url>
   <url>
-    <loc>https://line.kg/ky/privacy.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://line.kg/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="ky" href="https://line.kg/ky/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://line.kg/privacy.html" />
+    <loc>https://line.kg/ky/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://line.kg/privacy" />
+    <xhtml:link rel="alternate" hreflang="ky" href="https://line.kg/ky/privacy" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://line.kg/privacy" />
   </url>
 </urlset>

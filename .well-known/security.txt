@@ -1,0 +1,4 @@
+Contact: mailto:linekginfo@gmail.com
+Expires: 2027-11-06T00:00:00.000Z
+Preferred-Languages: en, ky
+Canonical: https://line.kg/.well-known/security.txt
