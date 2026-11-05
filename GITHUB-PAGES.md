@@ -42,9 +42,10 @@ registrar and cannot be set from this repository:
    *Settings > SSH and GPG keys* for anything unfamiliar.
 2. **Collaborators:** *Settings > Collaborators* should list only people who must
    publish. Give everyone else *Read* access or none.
-3. **Rulesets** (*Settings > Rules > Rulesets*) for `main` and `gh-pages`: block force
-   pushes, block deletion and require linear history. Add the repository admin role to
-   the bypass list so the owner can still run `python3 tools/publish-pages.py`.
+3. **Rulesets** (*Settings > Rules > Rulesets*): the active ruleset "Protect main and
+   gh-pages" restricts updates, deletions and force pushes on both branches. Only the
+   repository admin role is on the bypass list, so the owner can still push and run
+   `python3 tools/publish-pages.py`. Other collaborators cannot push to those branches.
 4. **Actions** (*Settings > Actions > General*): allow only actions from this
    repository or GitHub, set workflow permissions to read-only and require approval
    for all outside contributors.
