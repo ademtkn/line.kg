@@ -27,7 +27,7 @@ jobs:
         run: python3 tools/pages.py
       - name: Keep custom domain
         run: echo "line.kg" > dist/CNAME
-      - uses: actions/configure-pages@v5
+      - uses: actions/configure-pages@v6
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
