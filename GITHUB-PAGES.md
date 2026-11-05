@@ -20,10 +20,37 @@ GitHub Actions until billing is resolved and a successful deployment is verified
 
 GitHub Pages cannot select HTML by query string or apply Nginx configuration.
 The Pages package therefore includes pre-rendered Kyrgyz pages under `/ky/`,
-with native language links usable without JavaScript. Existing `?lang=ky` links
-are routed to those pages in the browser. Old `indexkg.html` and `contactkg.html`
+with native language links usable without JavaScript. Public addresses carry no
+file extension or language query: `/`, `/contact` and `/privacy` for English and
+`/ky/`, `/ky/contact` and `/ky/privacy` for Kyrgyz. Old `?lang=ky`, `index.html`
+and `contact.html` links are routed to these addresses in the browser. Old `indexkg.html` and `contactkg.html`
 links redirect to the Kyrgyz pages. Missing URLs return the custom 404 page.
 Nginx-specific response headers and server redirects do not apply on Pages.
 
 The main working directory may contain unpublished edits. Only the committed
 production sources were used for the migration; unrelated local edits were kept.
+
+## Securing the repository and domain
+
+Pages sends no custom response headers, so the build adds a Content-Security-Policy
+and referrer policy as meta tags, a frame-breaking check and
+`/.well-known/security.txt`. The settings below live in GitHub, Cloudflare and the
+registrar and cannot be set from this repository:
+
+1. **GitHub account:** turn on two-factor authentication (a passkey or authenticator
+   app), keep recovery codes offline, and review *Settings > Applications* and
+   *Settings > SSH and GPG keys* for anything unfamiliar.
+2. **Collaborators:** *Settings > Collaborators* should list only people who must
+   publish. Give everyone else *Read* access or none.
+3. **Rulesets** (*Settings > Rules > Rulesets*) for `main` and `gh-pages`: block force
+   pushes, block deletion and require linear history. Add the repository admin role to
+   the bypass list so the owner can still run `python3 tools/publish-pages.py`.
+4. **Actions** (*Settings > Actions > General*): allow only actions from this
+   repository or GitHub, set workflow permissions to read-only and require approval
+   for all outside contributors.
+5. **Pages** (*Settings > Pages*): custom domain `line.kg` with *Enforce HTTPS* on. Verify the
+   domain under the account's *Settings > Pages* so nobody else can claim it.
+6. **Code security:** enable Dependabot alerts, secret scanning with push protection
+   and private vulnerability reporting.
+7. **Domain:** protect the Cloudflare and cctld.kg accounts with two-factor
+   authentication, and add a CAA record `0 issue "letsencrypt.org"`.
