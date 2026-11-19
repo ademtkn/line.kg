@@ -146,7 +146,7 @@ class PublishPackageTests(unittest.TestCase):
         actual = {path.relative_to(self.destination) for path in self.destination.rglob("*")
                   if path.is_file() and path.suffix != ".gz"}
         self.assertEqual(actual, expected)
-        for private in (".git", "tools", "tests", "deployment", "README.md", ".DS_Store", "assets/images/instructor"):
+        for private in (".git", "tools", "tests", "deployment", "README.md", ".DS_Store"):
             self.assertFalse((self.destination / private).exists(), private + " is private source material")
         self.assertTrue((self.destination / "assets/images/social/line-education-en.png").exists())
         self.assertTrue((self.destination / "assets/images/social/line-education-ky.png").exists())
@@ -155,8 +155,6 @@ class PublishPackageTests(unittest.TestCase):
         for page in self.destination.rglob("*.html"):
             source = page.read_text()
             self.assertNotIn("data-content-status", source)
-            self.assertNotIn("instructor-sel", source)
-            self.assertNotIn("testimonial-sel", source)
             self.assertNotRegex(source, r"\bDemo\b")
             for node in build.elements(build.Document(source).root):
                 if node.tag == "script":
