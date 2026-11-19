@@ -3315,7 +3315,7 @@ button:focus-visible {
 
 .contact-options {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
   margin-top: 48px;
 }
@@ -3460,7 +3460,6 @@ button:focus-visible {
   .site-logo img { width: 136px; }
   .hero-sel { padding-top: calc(var(--site-topbar-offset) + var(--site-nav-offset) + 40px); }
   .contact-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .contact-card:last-child { grid-column: 1 / -1; }
   .contact-note { grid-template-columns: 44px minmax(0, 1fr); }
   .contact-note > a { grid-column: 2; }
 }
@@ -3675,3 +3674,39 @@ html[data-language-pending] body { visibility: hidden; }
 
 .partner-logo.partner-logo-wordmark img, .partner-dialog-logo.partner-logo-wordmark img { padding: 22px 18px; }
 .partner-dialog-links a { text-decoration: none; }
+
+/* Team cards: name and role */
+.team-item.style-one .member-info { text-align: center; }
+.team-item.style-one .member-info h4.title {
+  margin-bottom: 6px;
+  font-family: var(--heading-font);
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--heading-color);
+}
+.team-item.style-one .member-info .position {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+/* Centered hero (illustration removed) */
+.hero-sel .hero-layout { justify-content: center; }
+.hero-sel .hero-content {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.hero-sel .hero-content p {
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-sel .hero-actions { justify-content: center; }
+.hero-sel .hero-wrap-box {
+  max-width: 590px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  gap: 64px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
